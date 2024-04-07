@@ -24,12 +24,12 @@
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < c.Count; i++)
             {
-                if (c[i].Children.Count == 0 && isExistedValue(c[i].InnerText)) { sb.Append(addr + i.ToString() + " : " + c[i].InnerText + "\r\n"); }
+                if (c[i].Children.Count == 0 && isExisted_text(c[i].InnerText)) { sb.Append(addr + i.ToString() + " : " + c[i].InnerText + "\r\n"); }
                 else { sb.Append(ChildrenInnerText(addr + i.ToString() + "-", c[i].Children)); }
             }
             return sb.ToString();
         }
-        bool isExistedValue(String tx) {
+        bool isExisted_text(String tx) {
             if (tx == "" || tx == null) { return false; }
             else { 
              if(tx.Trim() != "") { return true; }
