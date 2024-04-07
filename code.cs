@@ -12,7 +12,7 @@
                 HtmlElementCollection t = webBrowser.Document.GetElementsByTagName(tagname);
                 for (int i = 0; i < t.Count; i++)
                 {
-                    sb.Append("\r\nclassname : "+t[i].GetAttribute("className") + "\r\n");
+                    //sb.Append("\r\nclassname : "+t[i].GetAttribute("className") + "\r\n");
                     sb.Append(ChildrenInnerText("", t[i].Children)); 
                 }
             }
