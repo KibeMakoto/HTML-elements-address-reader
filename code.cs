@@ -1,3 +1,4 @@
+        //検索支援、web scrapingを意図したページ解析手段として
         private void Btn_Click(object sender, EventArgs e)
         {
             textBox.Text = GetInnerTextsInTag("table");
