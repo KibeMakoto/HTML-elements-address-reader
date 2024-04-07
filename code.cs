@@ -8,7 +8,7 @@
             StringBuilder sb = new StringBuilder();
             try
             {
-                HtmlElementCollection t = wb.Document.GetElementsByTagName(tagname);
+                HtmlElementCollection t = webBrowser.Document.GetElementsByTagName(tagname);
                 for (int i = 0; i < t.Count; i++)
                 {
                     sb.Append("\r\nclassname : "+t[i].GetAttribute("className") + "\r\n");
